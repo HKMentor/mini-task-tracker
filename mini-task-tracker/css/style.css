@@ -1,0 +1,10 @@
+body {
+
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 15px;
+}
