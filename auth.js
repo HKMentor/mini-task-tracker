@@ -7,7 +7,7 @@ import {
   signInWithPopup
 } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-auth.js";
 
-// 🔹 Firebase Config
+//  Firebase Config
 const firebaseConfig = {
   apiKey: "AIzaSyARSqWLOvck2ZqJR-neFd0KPeJG-zKhHX4",
   authDomain: "mini-task-tracker-ed1db.firebaseapp.com",
@@ -21,7 +21,7 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
 
-// 🔹 Signup
+//  Signup
 window.signup = function () {
   const email = document.getElementById("signupEmail").value;
   const password = document.getElementById("signupPassword").value;
@@ -45,7 +45,7 @@ window.signup = function () {
 };
 
 
-// 🔹 Login
+//  Login
 window.login = function () {
   const email = document.getElementById("loginEmail").value;
   const password = document.getElementById("loginPassword").value;
@@ -58,7 +58,7 @@ window.login = function () {
     .catch(err => alert(err.message));
 };
 
-// 🔹 Google Login
+//  Google Login
 window.googleLogin = function () {
   signInWithPopup(auth, provider)
     .then(() => {
